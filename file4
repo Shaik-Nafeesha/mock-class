@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+echo "Enter a day of the week:"
+read day
+day=$(echo "$day" | tr '[:upper:]' '[:lower:]')
+
+
+case $day in
+    monday|tuesday|wednesday|thursday|friday)
+        echo "$day is a working day."
+        ;;
+    saturday|sunday)
+        echo "$day is a holiday."
+        ;;
+    *)
+        echo "Invalid input. Please enter a valid day of the week."
+        ;;
+esac
