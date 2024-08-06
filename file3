@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo " enter a number "
+read num
+if (( $num % 2 == 0 ))
+then 	
+	echo " even number "
+elif (( $num % 2 != 0 ))
+then
+	echo " odd number "
+else
+	echo " not a number "
+fi
